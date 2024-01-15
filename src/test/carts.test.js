@@ -34,7 +34,7 @@ describe('Testing Cart DAO Mocha/Chai/SuperTest', () => {
             products: [
                 {
                     productId: '6521c5ded7b1040b9f43c270',
-                    quantity: 77
+                    quantity: 17
                 }
             ]
         }
@@ -46,7 +46,7 @@ describe('Testing Cart DAO Mocha/Chai/SuperTest', () => {
         this.timeout(5000)
         try
         {
-            let idCart = '658c8b3d74c396e4cf970ee9'
+            let idCart = '6567fef88735abc20f9c46e3'
             const result = await this.cartsDao.getCart(idCart)
             assert.strictEqual(result.hasOwnProperty("cart"), true); // Mocha
             expect(result.hasOwnProperty("cart")).to.be.equals(true); // Chai
@@ -114,8 +114,8 @@ describe('Testing Cart DAO Mocha/Chai/SuperTest', () => {
         let mockCart = {
             products: [
                 {
-                    productId: '6521c5ded7b1040b9f43c270',
-                    quantity: 11
+                    productId: '652ebef179e1fad345be30c9',
+                    quantity: 10
                 }
             ]
         }

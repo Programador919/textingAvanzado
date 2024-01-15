@@ -51,7 +51,7 @@ describe('Testing Ticket DAO Mocha/Chai/SuperTest', () => {
     it("El endpoint POST /tickets debe crear un ticket", async function() {
         let mockTicket = {
             amount: 15777,
-            purchaser: "testpost@gmail.com",
+            purchaser: "programador919js@gmail.com",
         }
         
         const response = await requester.post('/tickets').send(mockTicket)

@@ -44,12 +44,12 @@ describe('Testing Product DAO Mocha/Chai/SuperTest', () => {
         expect(result).to.have.property('_id') //Chai
     })
     it("El DAO debe actualizar un producto", async function () {
-        let prodId = "658c811e27ccedb177f1a68b"
+        let prodId = "652ebef179e1fad345be30c9"
         let mockProductUpd = {
             description: "Test Desc Upd",
             image: "Test Image Upd",
             price: 1777,
-            stock: 77,
+            stock: 17,
             category: "Test Category Upd",
             availability: "Test Availability Upd",
             owner: "Test Owner Upd"
@@ -59,7 +59,7 @@ describe('Testing Product DAO Mocha/Chai/SuperTest', () => {
         expect(result).to.be.an('object') //Chai
     })
     it("El DAO debe eliminar un producto", async function () {
-        let prodId = "658c8605c6c665c47493c743" //Cambiar el id cada vez que se ejecute el test
+        let prodId = "652ebef179e1fad345be30c9" //Cambiar el id cada vez que se ejecute el test
         const result = await this.productsDao.deleteProduct(prodId)
         assert.strictEqual(typeof result, "object") //Mocha
         expect(result).to.be.an('object') //Chai
@@ -79,7 +79,7 @@ describe('Testing Product DAO Mocha/Chai/SuperTest', () => {
             description: "Test POST",
             image: "Test POST",
             price: 1777,
-            stock: 77,
+            stock: 17,
             category: "Test POST",
             availability: "in_stock",
             owner: "Test POST"
